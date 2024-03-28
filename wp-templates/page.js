@@ -1,91 +1,80 @@
-import { gql } from '@apollo/client';
-import * as MENUS from '../constants/menus';
-import { BlogInfoFragment } from '../fragments/GeneralSettings';
-import {
-  Header,
-  Footer,
-  Main,
-  Container,
-  ContentWrapper,
-  EntryHeader,
-  NavigationMenu,
-  FeaturedImage,
-  SEO,
-} from '../components';
+import { useQuery, gql } from '@apollo/client';
 
-export default function Component(props) {
-  // Loading state for previews
-  if (props.loading) {
+// wp-templates/front-page.js
+import blocks from '../wp-blocks';
+import { flatListToHierarchical } from '@faustwp/core';
+import { WordPressBlocksViewer } from '@faustwp/blocks';
+
+
+
+
+export default function Component({ loading, data }) {
+  // Loading state for previews.
+  if (loading) {
     return <>Loading...</>;
   }
 
-  const { title: siteTitle, description: siteDescription } =
-    props?.data?.generalSettings;
-  const primaryMenu = props?.data?.headerMenuItems?.nodes ?? [];
-  const footerMenu = props?.data?.footerMenuItems?.nodes ?? [];
-  const { title, content, featuredImage } = props?.data?.page ?? { title: '' };
+  const { title, editorBlocks } = data?.page ?? { title: '' };
+  const blockList = flatListToHierarchical(editorBlocks, { childrenKey: 'innerBlocks' });
+  console.log(blockList)
 
   return (
-    <>
-      <SEO
-        title={siteTitle}
-        description={siteDescription}
-        imageUrl={featuredImage?.node?.sourceUrl}
-      />
-      <Header
-        title={siteTitle}
-        description={siteDescription}
-        menuItems={primaryMenu}
-      />
-      <Main>
-        <>
-          <EntryHeader title={title} image={featuredImage?.node} />
-          <Container>
-            <ContentWrapper content={content} />
-          </Container>
-        </>
-      </Main>
-      <Footer title={siteTitle} menuItems={footerMenu} />
-    </>
+    <div className='is-layout-constrained'>
+      <h1>{title}</h1>
+      <WordPressBlocksViewer blocks={blockList} />
+    </div>
   );
 }
 
-Component.variables = ({ databaseId }, ctx) => {
+Component.variables = (seedData, ctx) => {
+  console.log("DDD:::",seedData)
   return {
-    databaseId,
-    headerLocation: MENUS.PRIMARY_LOCATION,
-    footerLocation: MENUS.FOOTER_LOCATION,
+    databaseId: seedData.databaseId,
     asPreview: ctx?.asPreview,
   };
 };
 
 Component.query = gql`
-  ${BlogInfoFragment}
-  ${NavigationMenu.fragments.entry}
-  ${FeaturedImage.fragments.entry}
-  query GetPageData(
+  ${blocks.CoreParagraph.fragments.entry}
+  ${blocks.CoreColumns.fragments.entry}
+  ${blocks.CoreColumn.fragments.entry}
+  ${blocks.CoreCode.fragments.entry}
+  ${blocks.CoreButtons.fragments.entry}
+  ${blocks.CoreButton.fragments.entry}
+  ${blocks.CoreQuote.fragments.entry}
+  ${blocks.CoreImage.fragments.entry}
+  ${blocks.CoreSeparator.fragments.entry}
+  ${blocks.CoreList.fragments.entry}
+  ${blocks.CoreHeading.fragments.entry}
+  query GetPage(
     $databaseId: ID!
-    $headerLocation: MenuLocationEnum
-    $footerLocation: MenuLocationEnum
     $asPreview: Boolean = false
   ) {
     page(id: $databaseId, idType: DATABASE_ID, asPreview: $asPreview) {
       title
       content
-      ...FeaturedImageFragment
-    }
-    generalSettings {
-      ...BlogInfoFragment
-    }
-    footerMenuItems: menuItems(where: { location: $footerLocation }) {
-      nodes {
-        ...NavigationMenuItemFragment
-      }
-    }
-    headerMenuItems: menuItems(where: { location: $headerLocation }) {
-      nodes {
-        ...NavigationMenuItemFragment
+      editorBlocks {
+        name
+        __typename
+        renderedHtml
+        id: clientId
+        parentId: parentClientId
+        ...${blocks.CoreParagraph.fragments.key}
+        ...${blocks.CoreColumns.fragments.key}
+        ...${blocks.CoreColumn.fragments.key}
+        ...${blocks.CoreCode.fragments.key}
+        ...${blocks.CoreButtons.fragments.key}
+        ...${blocks.CoreButton.fragments.key}
+        ...${blocks.CoreQuote.fragments.key}
+        ...${blocks.CoreImage.fragments.key}
+        ...${blocks.CoreSeparator.fragments.key}
+        ...${blocks.CoreList.fragments.key}
+        ...${blocks.CoreHeading.fragments.key}
       }
     }
   }
 `;
+
+
+
+
