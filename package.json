@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "faust dev",
     "build": "faust build",
-    "generate": "faust generatePossibleTypes",
+    "generate": "faust generatePossibleTypes && faust generateGlobalStylesheet",
     "stylesheet": "faust generateGlobalStylesheet",
     "start": "faust start"
   },

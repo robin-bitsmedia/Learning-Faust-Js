@@ -4,8 +4,11 @@ import { useRouter } from 'next/router';
 import { FaustProvider } from '@faustwp/core';
 import '@faustwp/core/dist/css/toolbar.css';
 import '../styles/global.scss';
-import { WordPressBlocksProvider } from '@faustwp/blocks';
+import { WordPressBlocksProvider, fromThemeJson } from '@faustwp/blocks';
 import blocks from '../wp-blocks';
+import themeJson from '../themes/twentytwentyfour/theme.json';
+import '../globalStylesheet.css';
+
 
 
 export default function MyApp({ Component, pageProps }) {
@@ -16,7 +19,7 @@ export default function MyApp({ Component, pageProps }) {
     <WordPressBlocksProvider
       config={{
         blocks,
-        theme: null
+        theme: fromThemeJson(themeJson),
       }}>
       <Component {...pageProps} key={router.asPath} />
     </WordPressBlocksProvider>

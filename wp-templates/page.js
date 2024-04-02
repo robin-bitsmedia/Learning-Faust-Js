@@ -1,4 +1,4 @@
-import { useQuery, gql } from '@apollo/client';
+import { gql } from '@apollo/client';
 
 // wp-templates/front-page.js
 import blocks from '../wp-blocks';
@@ -8,15 +8,16 @@ import { WordPressBlocksViewer } from '@faustwp/blocks';
 
 
 
-export default function Component({ loading, data }) {
+export default function Component( props) {
   // Loading state for previews.
-  if (loading) {
+  if (props.loading) {
     return <>Loading...</>;
   }
 
-  const { title, editorBlocks } = data?.page ?? { title: '' };
+  const { title, editorBlocks } = props.data?.page ?? { title: '' };
   const blockList = flatListToHierarchical(editorBlocks, { childrenKey: 'innerBlocks' });
   console.log(blockList)
+
 
   return (
     <div className='is-layout-constrained'>

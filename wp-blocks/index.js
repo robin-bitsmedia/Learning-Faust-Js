@@ -1,5 +1,6 @@
 // wp-blocks/index.js
 import { CoreBlocks } from '@faustwp/blocks';
+import CoreParagraph from './CoreParagraph';
 
 export default {
   CoreParagraph: CoreBlocks.CoreParagraph,

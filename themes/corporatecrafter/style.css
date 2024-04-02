@@ -1,0 +1,112 @@
+/*
+Theme Name: CorporateCrafter
+Theme URI: https://themegrove.com/products/sharkpulse/
+Author: Themegrove
+Author URI: https://themegrove.com/
+Description: CorporateCrafter shines as the Child theme, gracefully inheriting traits from its parent, SharkPulse. aAsophisticated WordPress theme crafted for professional excellence. Dive into a seamless website customization journey where each detail is within your command. From dynamic homepage arrangements to personalized portfolio exhibitions, CorporateCrafter empowers you to shape a sleek, corporate-inspired digital realm that reflects your distinct identity. With its intuitive interface and visually captivating designs, this theme revolutionizes your WordPress experience, transforming it into a dynamic voyage of corporate elegance and functional finesse. Embrace CorporateCrafter – where your website becomes a canvas for your corporate narrative. demo: https://demos.themegrove.com/corporatecrafter/
+Template: sharkpulse
+Requires at least: 6.4
+Tested up to: 6.4
+Requires PHP: 7.0
+Version: 1.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: corporatecrafter
+Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready, wide-blocks, block-styles, blog, portfolio, news
+*/
+
+.sidebar-latest-posts li .wp-block-latest-posts__post-author{
+    display: none;
+}
+.sidebar-latest-posts li{
+    padding-top: 16px;
+}
+
+.sidebar-latest-posts  li a{
+    text-decoration: none;
+}
+.cat-item a{
+    text-decoration: none; 
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.footer-list li{
+    list-style: none;
+}
+.footer-list{
+    padding-left: 0px;
+}
+.first-three li:before{
+    font-family: 'dashicons'; 
+    content: '\f344'; 
+    margin-right: 8px; 
+}
+
+.footer-location:before{
+    font-family: 'dashicons'; 
+    content: '\f230'; 
+    margin-right: 8px; 
+}
+.footer-mail:before{
+    font-family: 'dashicons'; 
+    content: '\f465'; 
+    margin-right: 8px; 
+}
+.footer-phone:before{
+    font-family: 'dashicons'; 
+    content: '\f525'; 
+    margin-right: 8px; 
+}
+.wp-block-post-date time::before{
+    font-family: 'dashicons'; 
+    content: '\f145'; 
+    margin-right: 8px; 
+}
+.woocommerce .woocommerce-breadcrumb, .woocommerce .woocommerce-breadcrumb a{
+    color: var(--wp--preset--color--contrast)!important;
+}
+
+.products-block-post-template li{
+    margin-bottom: 15px!important;
+}
+
+.sharkpulse-scrool-top::before{
+    color: var(--wp--preset--color--primary)!important;
+}
+.unique-column{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+#sticky-header{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+div#sticky-header-sticky-wrapper {
+    z-index: 9999;
+}
+.footer-separator{
+    width: 35px!important;
+    border: solid 1px;
+}
+
+.aspect-get-started::after{
+    font-family: 'dashicons'; 
+    content: '\f139'; 
+    margin-left: 5px; 
+    font-size: 14px;
+}
+.aspect-get-started a{
+    text-decoration: none;
+}
+.wp-block-post-author__name::before{
+    font-family: 'dashicons'; 
+    content: '\f110'; 
+    margin-right: 8px; 
+}
+
+.cover-img{
+	margin-bottom: -184px!important;
+}
+

@@ -1,0 +1,299 @@
+# Copyright (C) 2024 corporatecrafter
+# This file is distributed under the same license as the corporatecrafter package.
+msgid ""
+msgstr ""
+"Project-Id-Version: corporatecrafter\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-04-01 15:41+0000\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../functions.php:32
+msgid "CorporateCrafter"
+msgstr ""
+
+#: ../patterns/404.php:14
+msgid "404: Page Not Disco-vered"
+msgstr ""
+
+#: ../patterns/404.php:18
+msgid "Looks like the dance floor is empty here! This page has done disappearing act. Head back to the main stage by clicking the navigation links, and let's keep the party going!"
+msgstr ""
+
+#: ../patterns/404.php:25
+msgid "Go to home page"
+msgstr ""
+
+#: ../patterns/aboutus.php:17, ../patterns/aboutus.php:31, ../patterns/aboutus.php:45, ../patterns/aboutus.php:59
+msgid "10 +"
+msgstr ""
+
+#: ../patterns/aboutus.php:21
+msgid "Years In Excellence"
+msgstr ""
+
+#: ../patterns/aboutus.php:35
+msgid "Years In Business"
+msgstr ""
+
+#: ../patterns/aboutus.php:49
+msgid "Years In Success Story"
+msgstr ""
+
+#: ../patterns/aboutus.php:63
+msgid "Years In Stability"
+msgstr ""
+
+#: ../patterns/archive-product.php:60
+msgid "No products were found matching your selection. "
+msgstr ""
+
+#: ../patterns/archive.php:39, ../patterns/blogs-fullwidth.php:41, ../patterns/blogs-left.php:45, ../patterns/blogs.php:41, ../patterns/search.php:39
+msgid "No posts found"
+msgstr ""
+
+#: ../patterns/aspects.php:11
+msgid "Key Product Features Overview"
+msgstr ""
+
+#: ../patterns/aspects.php:21
+msgid "Financial"
+msgstr ""
+
+#: ../patterns/aspects.php:25, ../patterns/aspects.php:45, ../patterns/aspects.php:65, ../patterns/aspects.php:85
+msgid "Donec varius ornare pharetra. Phasellus barius elit ut vesti bulum viverra. Donec quis purus eu elit."
+msgstr ""
+
+#: ../patterns/aspects.php:30, ../patterns/aspects.php:50, ../patterns/aspects.php:70, ../patterns/aspects.php:90, ../patterns/message.php:23
+msgid "Get Started"
+msgstr ""
+
+#: ../patterns/aspects.php:41
+msgid "IT Consulting"
+msgstr ""
+
+#: ../patterns/aspects.php:61
+msgid "Digital Marketing"
+msgstr ""
+
+#: ../patterns/aspects.php:81
+msgid "Human Resources"
+msgstr ""
+
+#: ../patterns/blogs-fullwidth.php:11, ../patterns/blogs-left.php:11, ../patterns/blogs.php:11
+msgid "News"
+msgstr ""
+
+#: ../patterns/cover.php:14
+msgid "Transform Your"
+msgstr ""
+
+#: ../patterns/cover.php:14
+msgid "Business"
+msgstr ""
+
+#: ../patterns/cover.php:18
+msgid "Vestibulum fringilla pede sit amet augue. Phasellus a est. Integer tincidunt. In hac habitasse platea dictumst. Ut a nisl id ante tempus hendrerit."
+msgstr ""
+
+#: ../patterns/cover.php:24
+msgid "Learn More"
+msgstr ""
+
+#: ../patterns/cover.php:30
+msgid "Get In Touch"
+msgstr ""
+
+#: ../patterns/features.php:20
+msgid "Partner With Our Trusted Consultants Today."
+msgstr ""
+
+#: ../patterns/features.php:24, ../patterns/post.php:16
+msgid "Cras non dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur suscipit suscipit tellus. Phasellus tempus. Aenean imperdiet."
+msgstr ""
+
+#: ../patterns/features.php:28
+msgid "Donec id justo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam vitae tortor. Donec interdum, metus et hendrerit aliquet, dolor diam sagittis ligula, eget egestas libero turpis vel mi."
+msgstr ""
+
+#: ../patterns/features.php:38
+msgid "24/7 Customer Support"
+msgstr ""
+
+#: ../patterns/features.php:48, ../patterns/features.php:58
+msgid "Employee Experiance"
+msgstr ""
+
+#: ../patterns/features.php:65
+msgid "More About Us"
+msgstr ""
+
+#: ../patterns/footer.php:14
+msgid "Corporate"
+msgstr ""
+
+#: ../patterns/footer.php:23
+msgid "City Centre, London, UK"
+msgstr ""
+
+#: ../patterns/footer.php:27
+msgid "example@example.com"
+msgstr ""
+
+#: ../patterns/footer.php:31
+msgid "(+01)-955-930-95267"
+msgstr ""
+
+#: ../patterns/footer.php:60
+msgid "Portfolio"
+msgstr ""
+
+#: ../patterns/footer.php:64
+msgid "Services"
+msgstr ""
+
+#: ../patterns/footer.php:68
+msgid "About Us"
+msgstr ""
+
+#: ../patterns/footer.php:72, ../patterns/message.php:29
+msgid "Contact Us"
+msgstr ""
+
+#: ../patterns/footer.php:76
+msgid "Pricing Plans"
+msgstr ""
+
+#: ../patterns/footer.php:84
+msgid "Useful Links"
+msgstr ""
+
+#: ../patterns/footer.php:94
+msgid "FAQ"
+msgstr ""
+
+#: ../patterns/footer.php:98
+msgid "Blog"
+msgstr ""
+
+#: ../patterns/footer.php:102
+msgid "Contact"
+msgstr ""
+
+#: ../patterns/footer.php:106
+msgid "Product"
+msgstr ""
+
+#: ../patterns/footer.php:110
+msgid "Customer Support"
+msgstr ""
+
+#: ../patterns/footer.php:118
+msgid "Subcribe Us"
+msgstr ""
+
+#: ../patterns/header.php:11
+msgid "Crafting Tomorrow's Business Landscape Today"
+msgstr ""
+
+#: ../patterns/header.php:32
+msgid "Schadule a call"
+msgstr ""
+
+#: ../patterns/message.php:11
+msgid "Effective Communication Strategies"
+msgstr ""
+
+#: ../patterns/message.php:16
+msgid "Phasellus consectetuer vestibulum elit. Suspendisse nisl elit, rhoncus eget, elementum ac, condimentum eget, diam. Suspendisse nisl elit, rhoncus eget, elementum ac, condimentum eget, diam. Sed a libero. Vivamus quis mi."
+msgstr ""
+
+#: ../patterns/post.php:12
+msgid "Latest News And Articles"
+msgstr ""
+
+#: ../patterns/services.php:17
+msgid "Consulting Services We Offered"
+msgstr ""
+
+#: ../patterns/services.php:21
+msgid "Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Nullam sagittis. Vivamus in erat ut urna cursus vestibulum. Etiam sollicitudin, ipsum eu pulvinar rutrum, tellus ipsum laoreet sapien, quis venenatis ante odio sit amet eros. In hac habitasse platea dictumst."
+msgstr ""
+
+#: ../patterns/services.php:25
+msgid "Phasellus volutpat, metus eget egestas mollis, lacus lacus blandit dui, id egestas quam mauris ut lacus. Fusce neque. Fusce commodo aliquam arcu. Phasellus magna. Sed hendrerit."
+msgstr ""
+
+#: ../patterns/services.php:30
+msgid "Our Services"
+msgstr ""
+
+#: ../patterns/services.php:44
+msgid "Operations Consulting"
+msgstr ""
+
+#: ../patterns/services.php:48, ../patterns/services.php:62, ../patterns/services.php:78, ../patterns/services.php:92
+msgid "Etiam ultricies nisi vel augue. Fusce fermentum. Curabitur ullamcorper ultricies nisi."
+msgstr ""
+
+#: ../patterns/services.php:58
+msgid "Managing Consulting"
+msgstr ""
+
+#: ../patterns/services.php:74
+msgid "Strategy Consulting"
+msgstr ""
+
+#: ../patterns/services.php:88
+msgid "Marketing Consulting"
+msgstr ""
+
+#: ../patterns/sidebar.php:14
+msgid "Latest Posts"
+msgstr ""
+
+#: ../patterns/sidebar.php:22
+msgid "Categories"
+msgstr ""
+
+#: ../patterns/sidebar.php:30
+msgid "Tags"
+msgstr ""
+
+#: ../patterns/single-product.php:10
+msgid "Single Product"
+msgstr ""
+
+#: ../patterns/single-product.php:58
+msgid "Related Products"
+msgstr ""
+
+#: ../patterns/unique.php:12
+msgid " unique contrast"
+msgstr ""
+
+#: ../patterns/unique.php:30, ../patterns/unique.php:40, ../patterns/unique.php:50, ../patterns/unique.php:60
+msgid "Estibulum fringilla pede sit amet augue. Phasellus a est. Integer tincidunt."
+msgstr ""
+
+#: ../patterns/unique.php:82
+msgid "Meet The Team"
+msgstr ""
+
+#: ../patterns/unique.php:86
+msgid "estibulum fringilla pede sit amet augue. Phasellus a est. Integer tincidunt."
+msgstr ""
+
+#: ../patterns/unique.php:86
+msgid " In hac habitasse platea dictumst. Ut a nisl id ante tempus hendrerit. Phasellus magna. Nam adipiscing. Praesent venenatis metus at tortor pulvinar varius. Vivamus euismod mauris. Nullam vel sem."
+msgstr ""
+
+#: ../patterns/unique.php:91
+msgid "Explore"
+msgstr ""
