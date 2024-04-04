@@ -3,7 +3,6 @@ import React from 'react';
 import { useRouter } from 'next/router';
 import { FaustProvider } from '@faustwp/core';
 import '@faustwp/core/dist/css/toolbar.css';
-import '../styles/global.scss';
 import { WordPressBlocksProvider, fromThemeJson } from '@faustwp/blocks';
 import blocks from '../wp-blocks';
 import themeJson from '../themes/twentytwentyfour/theme.json';
